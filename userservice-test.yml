@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:mysql://localhost/unit02
+    username: root
+    password: ps123456
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8082
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://192.168.87.129:8761/eureka/
+
